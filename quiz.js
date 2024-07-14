@@ -9,7 +9,7 @@ function checkAnswer() {
     // Check if an answer is selected
     if (userAnswer) {
         // Compare user's answer with the correct answer
-        if (userAnswer.value === correctAnswer) {
+        if (userAnswer === correctAnswer) {
             // If correct, display "Correct! Well done."
             document.getElementById("feedback").textContent = "Correct! Well done.";
         } else {
