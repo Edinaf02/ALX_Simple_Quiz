@@ -1,8 +1,4 @@
-// Get the submit button element
-const submitButton = document.getElementById("submit-answer");
-
-// Add click event listener to the submit button
-submitButton.addEventListener("click", function() {
+function checkAnswer() {
     // Define the correct answer
     const correctAnswer = "4";
 
@@ -20,4 +16,8 @@ submitButton.addEventListener("click", function() {
     } else {
         document.getElementById("feedback").textContent = "Please select an answer.";
     }
-});
+}
+
+// Add event listener to the submit button
+const submitButton = document.getElementById("submit-answer");
+submitButton.addEventListener("click", checkAnswer);
