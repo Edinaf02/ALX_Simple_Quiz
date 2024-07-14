@@ -20,4 +20,6 @@ function checkAnswer() {
 
 // Add event listener to the submit button
 const submitButton = document.getElementById("submit-answer");
-submitButton.addEventListener("click", checkAnswer);
+submitButton.addEventListener("click", function() {
+    checkAnswer();
+});
